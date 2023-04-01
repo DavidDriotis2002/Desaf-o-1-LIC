@@ -1,0 +1,179 @@
+.CentrarBloques {
+
+    text-align: center;
+    /*centramos texto*/
+
+}
+
+.tamanioYPosicionDeTituloHeader {
+    text-align: center;
+    /*centramos texto*/
+    font-size: 250%;
+    /*tamanio letra*/
+}
+
+.centrarBloquesInf {
+    width: 25%;
+    /*ubicacion a la derecha*/
+    margin-left: 500px;
+    /*cantidad de espacio en blanco al inicio*/
+
+}
+
+.tamanioFuenteValorRestante {
+    font-size: 150%;
+    /*tamanio letra*/
+}
+
+.bordeYColorIngresos {
+    border-style: solid;
+    /*aplicamos borde*/
+}
+
+#contenedorIngresos p {
+    background-color: black;
+    /*color de fondo*/
+    color: white;
+    /*color de letra*/
+    display: table-cell;
+    /*tipo de formato de ubicacion*/
+    border: 15px solid black;
+    /*borde*/
+    padding-right: 100px;
+    /*dejamos espacio en blanco al lado derecho*/
+}
+
+#contenedorEgresos p {
+    background-color: white;
+    color: black;
+    display: table-cell;
+    border: 15px solid white;
+    padding-right: 106px;
+}
+
+.porcentageGastos {
+    background-color: black;
+    color: white;
+    padding-right: 2px;
+    padding-left: 1px;
+    display: inline-flex;
+    border: solid;
+    width: 60px;
+    height: 30px;
+}
+
+.contenedorDividido {
+    max-width: 1200px;
+    /*ancho maximo del contenedor*/
+    margin: 0 auto;
+    /*centrar horizontalmente el contenedor*/
+    display: grid;
+    /*utiliza el sistema de cuadriculas*/
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.contenedorEspacios {
+    padding: 1rem;
+    /*relleno del contenedor*/
+    display: flex;
+    /*utiliza el sistema de diseño flexible*/
+    flex-direction: column;
+    /*organiza los elementos secundarios en una columna*/
+    gap: 1rem;
+    /*espacio entre los elementos secundarios*/
+}
+
+.tamanioFuenteTransaccion {
+    font-size: 2.5rem;
+    /*tamanio de fuente*/
+    text-indent: 40px;
+    /*mover texto en especifico a la derecha*/
+}
+
+.OrganizadorEnColumnaInf {
+    display: flex;
+    /*utiliza sistema de diseño flexible*/
+    flex-direction: column;
+    /*organiza los elementos secundarios en una columna*/
+    gap: 1.5rem;
+    /*Espacio entre los elementos secundarios*/
+    width: 50%;
+    /*ancho de 50% para los recibidores de inf.*/
+    align-items: center;
+    /*Centrar todos los bloques de Inf.*/
+
+
+}
+
+.combobox {
+    padding: 3px;
+    /*Espacio al inicio del texto*/
+    border: 2px solid rgba(160, 170, 166, 0.282);
+    /*definimos color y borde el combobox en especifico*/
+    height: 20%;
+    /*definimos altura del combobox*/
+    width: 73%;
+    /*definimos ancho del combobox*/
+}
+
+.descripcionInf {
+
+    padding: 3px;
+    /*especio al inicio del texto*/
+    border: 2px solid rgba(160, 170, 166, 0.282);
+    height: 20%;
+    /*definimos altura del txtDescripcion*/
+    width: 73%;
+    /*definimos ancho del txtDescripcion*/
+}
+
+.montoInf {
+    padding: 3px;
+    /*espacio al inicio del texto*/
+    border: 2px solid rgba(160, 170, 166, 0.282);
+    height: 20%;
+    /*definimos altura del txtDescripcion*/
+    width: 73%;
+    /*definimos ancho del txtDescripcion*/
+}
+
+.botonAgregarInf {
+    padding: 3px;
+    /*espacio al inicio del texto*/
+    background-color: black;
+    /*Color de fondo del boton*/
+    color: white;
+    height: 20%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.lineaDivision {
+    border-left: 2px solid rgb(204, 199, 199);
+    /*Agregamos linea vertical en medio de la pagina*/
+    padding: 30px;
+    /*separamos la linea vertical de los botones*/
+    flex-direction: column;
+}
+
+.botonesIngYEgr button {
+    display: inline-block;
+    font-size: 18px;
+    /*tamanio de los botones*/
+    width: 250px;
+}
+
+.botonIngresosLista {
+    border-radius: 10px;
+    /*creamos el radio redondeado*/
+    height: 70px;
+    /*altura correspondiente*/
+}
+
+.botonEgresoLista {
+    border-radius: 10px;
+    /*creamos el radio redondeado*/
+    height: 70px;
+    /*altura correspondiente*/
+}

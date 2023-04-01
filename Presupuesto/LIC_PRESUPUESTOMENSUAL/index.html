@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculador de Presupuesto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header class="CentrarBloques">
+    <h1 id="tituloDeFecha" class="tamanioYPosicionDeTituloHeader">
+    </h1>
+    <div class="centrarBloquesInf">
+      <h2 id="restante" class="tamanioFuenteValorRestante"></h2>
+      <div id="contenedorIngresos">
+        <p>Ingresos</p>
+        <p id="total-ingresos"></p>
+      </div>
+      <br>
+      <div id="contenedorEgresos">
+        <p>Egresos</p>
+        <p id="total-egresos"></p>
+      </div>
+      <br>
+      <div>
+        Porcentaje de gastos
+        <div id="porcentaje-gastos" class="porcentageGastos">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedorDividido">
+    <div class="contenedorEspacios">
+      <h1 class="tamanioFuenteTransaccion">Transacción</h1>
+
+      <div class="OrganizadorEnColumnaInf">
+        <select id="ingreso-tipo" class="combobox" name="" id="">
+          <option value="Ingresos">Ingresos</option>
+          <option value="Egresos">Egresos</option>
+        </select>
+        <input id="descripcion" placeholder="Descripción" class="descripcionInf" type="text" required>
+        <input id="monto" placeholder="Monto" class="montoInf" type="number" />
+        <button id="agregar" class="botonAgregarInf">Agregar</button>
+      </div>
+    </div>
+
+    <div class="lineaDivision">
+      <!-- Actions -->
+      <div class="botonesIngYEgr">
+        <button id="tab-ingresos" class="botonIngresosLista">
+          Ingresos
+        </button>
+        <button id="tab-egresos" class="botonEgresoLista">
+          Egresos
+        </button>
+      </div>
+
+      <div id="lista" class="flex flex-col gap-1"></div>
+    </div>
+  </main>
+
+  <div Class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+    style="height: 100%; width: 100%;">
+    <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+        style="stroke: none; fill: #08f;"></path>
+</svg></div>
+<section class="textos-header">
+<center>
+    <h1>David Otoniel Driotis Cruz</h1>
+    <h1>Universidad don Bosco de El Salvador</h1>
+    <h1>Desafio 1, lenguajes interpretados en el cliente</h1>
+    <h1>Docente: Oscar Ariel Pérez Torres</h1>
+</center>
+
+</section>
+<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+    style="height: 100%; width: 100%;">
+    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: #08f;"></path>
+</svg></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
